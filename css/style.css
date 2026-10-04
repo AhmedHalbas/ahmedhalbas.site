@@ -351,7 +351,7 @@ input, textarea, select {
 	background: #fff;
 	outline: none;
 	-webkit-appearance: none;
-	color: #333;
+	color: #e2e8f0;
 	border: 0px solid #fff;
 	padding: 11px 25px;
 	margin: 0px;
@@ -386,25 +386,25 @@ textarea {
 }
 	
 input:hover, textarea:hover, select:hover {
-	color: #333;
+	color: #e2e8f0;
 }
 	
 input:focus, textarea:focus, select:focus {
-	color: #333;
+	color: #e2e8f0;
 }
 
 input[type="submit"], button {
 	width: auto;
 	font-style: normal;
 	background: #fff;
-	color: #333;
+	color: #e2e8f0;
 	cursor: pointer;
 	border: 1px solid #fff;
 	padding: 12px 20px;
 }
 
 input[type="submit"]:hover, button:hover {
-	color: #333;
+	color: #e2e8f0;
 }
 
 select, option {
@@ -419,11 +419,11 @@ input[type="radio"] {
 	-webkit-appearance: radio;
 }
 
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #333; }
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #e2e8f0; }
 
-input:-moz-placeholder, textarea:-moz-placeholder { color: #333; }
+input:-moz-placeholder, textarea:-moz-placeholder { color: #e2e8f0; }
 
-input.placeholder, textarea.placeholder { color: #333; }
+input.placeholder, textarea.placeholder { color: #e2e8f0; }
 
 input[placeholder] { text-overflow: ellipsis; }
 
@@ -444,7 +444,7 @@ input:-moz-placeholder { text-overflow: ellipsis; }
 }
 
 .form-note {
-	color: #333;
+	color: #e2e8f0;
 	font-style: italic;
 	margin: 24px 0;
 }
@@ -539,18 +539,18 @@ input:-moz-placeholder { text-overflow: ellipsis; }
 /* WebKit browsers */
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder { 
-    color: #333;
+    color: #e2e8f0;
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color: #333;
+    color: #e2e8f0;
     opacity:  1;
 }
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color: #333; 
+    color: #e2e8f0; 
     opacity:  1;
 }
 :-ms-input-placeholder { /* Internet Explorer 10+ */
-   color: #333;
+   color: #e2e8f0;
 }
 
 .subscription-form {
@@ -584,7 +584,7 @@ textarea::-webkit-input-placeholder {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ffffff;
+    background-color: #0F172A;
     z-index: 10001;
 }
 
@@ -855,7 +855,7 @@ textarea::-webkit-input-placeholder {
 
 .navigation.animated_nav .nav > li > a,
 .navigation.animated_nav .nav > li > a i {
-	color: #333;
+	color: #e2e8f0;
 }
 
 .navigation .nav > li > a:hover {
@@ -869,7 +869,7 @@ textarea::-webkit-input-placeholder {
 
 .nav > li > a:hover, .nav > li > a:focus {
     text-decoration: none;
-    background-color: #fff;
+    background-color: transparent;
 }
 
 .navigation.animated_nav .nav > li.current > a {
@@ -1133,7 +1133,7 @@ textarea::-webkit-input-placeholder {
 .default-button i,
 .default-button:hover i,
 .default-button:focus i {
-	color: #333;
+	color: #e2e8f0;
 }
 
 /*	16.2 Small Buttons
@@ -1145,7 +1145,7 @@ textarea::-webkit-input-placeholder {
 	-moz-border-radius: 27px;
 	border-radius: 27px;
 	padding: 6px 25px;
-	color: #333;
+	color: #e2e8f0;
 	line-height: 22px;
 	font-size: 16px;
 	outline: none;
@@ -1162,14 +1162,14 @@ textarea::-webkit-input-placeholder {
 
 .sm-button:hover,
 .sm-button:focus {
-	color: #333;
+	color: #e2e8f0;
 	opacity: 0.8;
 }
 
 .sm-button i,
 .sm-button:hover i,
 .sm-button:focus i {
-	color: #333;
+	color: #e2e8f0;
 }
 
 /*	16.3 Border Buttons
@@ -1201,14 +1201,14 @@ textarea::-webkit-input-placeholder {
 .border-button:hover,
 .border-button:focus {
 	background: #fff;
-	color: #333;
+	color: #e2e8f0;
 	opacity: 0.8;
 }
 
 .border-button i,
 .border-button:hover i,
 .border-button:focus i {
-	color: #333;
+	color: #e2e8f0;
 }
 
 /*	16.4 Small Border Buttons
@@ -1221,7 +1221,7 @@ textarea::-webkit-input-placeholder {
 	-moz-border-radius: 27px;
 	border-radius: 27px;
 	padding: 6px 25px;
-	color: #333;
+	color: #e2e8f0;
 	line-height: 22px;
 	font-size: 16px;
 	outline: none;
@@ -1240,14 +1240,14 @@ textarea::-webkit-input-placeholder {
 .border-sm-button:hover,
 .border-sm-button:focus {
 	background: #fff;
-	color: #333;
+	color: #e2e8f0;
 	opacity: 0.8;
 }
 
 .border-sm-button i,
 .border-sm-button:hover i,
 .border-sm-button:focus i {
-	color: #333;
+	color: #e2e8f0;
 }
 	
 /*	16.5 Buttons Styles
@@ -1372,7 +1372,7 @@ textarea::-webkit-input-placeholder {
 .border-bt-grey:hover,
 .border-bt-grey:focus {
 	background: #dedede;
-	color: #333;
+	color: #e2e8f0;
 	opacity: 0.8;
 }
 
@@ -1382,7 +1382,7 @@ textarea::-webkit-input-placeholder {
 
 .border-bt-grey:hover i,
 .border-bt-grey:focus i {
-	color: #333;
+	color: #e2e8f0;
 }
 
 /* Blue */
@@ -1478,19 +1478,19 @@ textarea::-webkit-input-placeholder {
 /* Grey */
 .bt-grey {
 	background: #dedede;
-	color: #333;
+	color: #e2e8f0;
 }
 
 .bt-grey:hover,
 .bt-grey:focus {
-	color: #333;
+	color: #e2e8f0;
 	opacity: 0.8;
 }
 
 .bt-grey i,
 .bt-grey:hover i,
 .bt-grey:focus i {
-	color: #333;
+	color: #e2e8f0;
 }
 
 /* Transparent */
@@ -1514,19 +1514,19 @@ textarea::-webkit-input-placeholder {
 /* Transparent Dark */
 .bt-transparent-dark {
 	background: transparent;
-	color: #333;
+	color: #e2e8f0;
 }
 
 .bt-transparent-dark:hover,
 .bt-transparent-dark:focus {
-	color: #333;
+	color: #e2e8f0;
 	opacity: 0.8;
 }
 
 .bt-transparent-dark i,
 .bt-transparent-dark:hover i,
 .bt-transparent-dark:focus i {
-	color: #333;
+	color: #e2e8f0;
 }
 
 
@@ -1980,7 +1980,7 @@ body.mobile .animated {
 	.navigation .nav > li > a,
 	.navigation .nav > li > a.active {
 		line-height: 40px;
-		color: #333;
+		color: #e2e8f0;
 		padding: 10px;
 		box-shadow: inset 0px -1px 0px transparent;
 	}
@@ -2497,5 +2497,5 @@ body.mobile .animated {
 	font-size: 34px;
 	line-height: 38px;
 	margin-bottom: 10px;
-	color: #000;
+	color: #ffffff;
  }

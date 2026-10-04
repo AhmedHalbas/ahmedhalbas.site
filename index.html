@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- FAV AND ICONS   -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/Employment.ico" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><defs><linearGradient id='g' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' stop-color='%23FBBF24'/><stop offset='100%' stop-color='%23D97706'/></linearGradient></defs><path d='M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16' fill='none' stroke='url(%23g)' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/></svg>" />
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Bootstrap CSS -->
@@ -25,18 +25,18 @@
     <!-- Enhanced Custom Styles -->
     <style>
         :root {
-            --primary-color: #667eea;
-            --secondary-color: #764ba2;
-            --accent-color: #f093fb;
+            --primary-color: #F59E0B;
+            --secondary-color: #A0522D;
+            --accent-color: #F59E0B;
             --text-light: #ffffff;
             --text-dark: #2d3748;
             --text-muted: #718096;
-            --bg-dark: #1a202c;
-            --bg-darker: #171923;
-            --bg-card: #2d3748;
-            --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            --gradient-accent: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-            --gradient-bg: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            --bg-dark: #18181B;
+            --bg-darker: #09090B;
+            --bg-card: rgba(39, 39, 42, 0.7);
+            --gradient-primary: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+            --gradient-accent: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+            --gradient-bg: #1C1917;
             --shadow-light: 0 10px 25px rgba(0, 0, 0, 0.1);
             --shadow-medium: 0 20px 40px rgba(0, 0, 0, 0.15);
             --shadow-heavy: 0 30px 60px rgba(0, 0, 0, 0.2);
@@ -62,7 +62,7 @@
 
         /* Enhanced Header Styles */
         header {
-            background: rgba(26, 32, 44, 0.95);
+            background: rgba(24, 24, 27, 0.95);
             backdrop-filter: blur(20px);
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
             transition: all 0.3s ease;
@@ -127,12 +127,12 @@
             z-index: 2;
         }
 
-        .mh-header-info h2 {
+        .mh-header-info h1, .mh-header-info h2 {
             font-family: 'Space Grotesk', sans-serif;
             font-size: 3.5rem;
             font-weight: 700;
             margin-bottom: 1rem;
-            background: linear-gradient(135deg, #ffffff 0%, #f093fb 100%);
+            background: linear-gradient(135deg, #ffffff 0%, #D2691E 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -203,7 +203,7 @@
         .social-links a:hover {
             background: var(--gradient-accent);
             transform: translateY(-3px);
-            box-shadow: var(--shadow-medium);
+            box-shadow: 0 0 20px rgba(245, 158, 11, 0.4);
         }
 
         /* Hero Image */
@@ -281,7 +281,7 @@
         .mh-about-img {
             border-radius: 20px;
             overflow: hidden;
-            box-shadow: var(--shadow-medium);
+            box-shadow: 0 0 20px rgba(245, 158, 11, 0.4);
             position: relative;
             z-index: 2;
         }
@@ -349,7 +349,7 @@
 
         .btn-fill:hover {
             transform: translateY(-3px);
-            box-shadow: var(--shadow-medium);
+            box-shadow: 0 0 20px rgba(245, 158, 11, 0.4);
             color: var(--text-light);
         }
 
@@ -447,7 +447,7 @@
 
         .mh-education-item:hover {
             transform: translateX(10px);
-            box-shadow: var(--shadow-medium);
+            box-shadow: 0 0 20px rgba(245, 158, 11, 0.4);
         }
 
         .mh-education-item h4 {
@@ -599,7 +599,7 @@
 
         .mh-address-footer-item:hover {
             transform: translateY(-10px);
-            box-shadow: var(--shadow-medium);
+            box-shadow: 0 0 20px rgba(245, 158, 11, 0.4);
         }
 
         .each-icon i {
@@ -633,7 +633,7 @@
 
         /* Responsive Design */
         @media (max-width: 768px) {
-            .mh-header-info h2 {
+            .mh-header-info h1, .mh-header-info h2 {
                 font-size: 2.5rem;
             }
 
@@ -712,6 +712,81 @@
         .navbar-toggler-icon {
             background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
         }
+    
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+        
+        .mh-portfolio .grid-item {
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            background: var(--bg-card);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            margin-bottom: 30px;
+        }
+        .mh-portfolio .grid-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(245, 158, 11, 0.3);
+            border-color: var(--accent-color);
+        }
+        
+        .tech-stack-tag {
+            font-family: 'JetBrains Mono', monospace;
+            background: rgba(245, 158, 11, 0.1);
+            color: var(--accent-color);
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            margin-right: 5px;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+        
+        .bento-card {
+            background: var(--bg-card);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 24px;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        .bento-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(245, 158, 11, 0.3);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+    
+        .mh-about-tag ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .mh-about-tag li {
+            margin: 0;
+        }
+        .mh-about-tag li span {
+            font-family: 'JetBrains Mono', monospace;
+            background: rgba(245, 158, 11, 0.1);
+            color: #D97706;
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-size: 14px;
+            display: inline-block;
+            border: 1px solid rgba(245, 158, 11, 0.2);
+            transition: all 0.3s ease;
+        }
+        .mh-about-tag li span:hover {
+            background: rgba(245, 158, 11, 0.2);
+            transform: translateY(-2px);
+        }
+
     </style>
 </head>
 
@@ -754,6 +829,8 @@
         </div>
     </header>
 
+    <!-- MAIN CONTENT -->
+<main>
     <!-- HOME SECTION -->
     <section class="mh-home" id="mh-home">
         <div class="container">
@@ -764,7 +841,7 @@
                             <span>Hello I'm</span>
                         </div>
 
-                        <h2 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">Ahmed Essam Halbas</h2>
+                        <h1 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">Ahmed Essam Halbas</h1>
                         <h4 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">Mobile App Developer</h4>
 
                         <ul>
@@ -798,6 +875,23 @@
                             <img src="assets/images/hero.png" alt="Ahmed Essam" class="img-fluid">
                         </div>
                     </div>
+
+                    <div class="terminal-mockup wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s" style="background: rgba(24, 24, 27, 0.8); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; overflow: hidden; font-family: 'JetBrains Mono', monospace; margin-top: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+                        <div class="terminal-header" style="background: rgba(255, 255, 255, 0.05); padding: 10px; display: flex; align-items: center; border-bottom: 1px solid rgba(255, 255, 255, 0.05);">
+                            <div style="width: 12px; height: 12px; border-radius: 50%; background: #FF5F56; margin-right: 8px;"></div>
+                            <div style="width: 12px; height: 12px; border-radius: 50%; background: #FFBD2E; margin-right: 8px;"></div>
+                            <div style="width: 12px; height: 12px; border-radius: 50%; background: #27C93F;"></div>
+                            <div style="flex-grow: 1; text-align: center; color: var(--text-muted); font-size: 12px;">guest@ahmed: ~</div>
+                        </div>
+                        <div class="terminal-body" style="padding: 20px; color: #a9b7c6; font-size: 14px; line-height: 1.5;">
+                            <div style="margin-bottom: 10px;"><span style="color: #F59E0B;">$</span> whoami</div>
+                            <div style="color: #D97706; margin-bottom: 10px;">Ahmed Essam Halbas</div>
+                            <div style="margin-bottom: 10px;"><span style="color: #F59E0B;">$</span> get_skills --primary</div>
+                            <div style="color: #27C93F; margin-bottom: 10px;">["React Native", "Android", "iOS", "Typescript"]</div>
+                            <div><span style="color: #F59E0B;">$</span> <span class="cursor" style="display: inline-block; width: 8px; height: 15px; background: #F59E0B; animation: blink 1s step-end infinite; vertical-align: middle;"></span></div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -808,12 +902,12 @@
         <div class="container">
             <div class="row section-separator">
                 <div class="col-sm-12 col-md-6">
-                    <div class="mh-about-img shadow-2 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s">
+                    <div class="mh-about-img bento-card shadow-2 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s">
                         <img src="assets/images/ab-img.png" alt="About Ahmed" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6">
-                    <div class="mh-about-inner">
+                    <div class="mh-about-inner bento-card">
                         <h2 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">About Me</h2>
                         <p class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
                             Hello, I'm Ahmed, a passionate mobile developer based in Cairo. 
@@ -848,7 +942,7 @@
                 </div>
 
                 <div class="col-sm-6">
-                    <div class="mh-service-item shadow-1 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s">
+                    <article class="mh-service-item bento-card shadow-1 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s">
                         <i class="fas fa-code"></i>
                         <h3>Native Android Development</h3>
                         <p>
@@ -856,10 +950,10 @@
                             that respect the highest standards of usability, 
                             performance and modern design principles.
                         </p>
-                    </div>
+                    </article>
                 </div>
                 <div class="col-sm-6">
-                    <div class="mh-service-item shadow-1 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.7s">
+                    <article class="mh-service-item bento-card shadow-1 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.7s">
                         <i class="fas fa-mobile-alt"></i>
                         <h3>React Native & Flutter Development</h3>
                         <p>
@@ -867,7 +961,7 @@
                             and iOS with high-quality code, perfect UI/UX design, 
                             and optimal performance.
                         </p>
-                    </div>
+                    </article>
                 </div>
             </div>
         </div>
@@ -937,6 +1031,7 @@
                                         <i class="fas fa-search"></i>
                                         <h6 class="title">My Vodafone Ireland - iOS</h6>
                                         <span class="sub-title">React Native</span>
+                                    <div style="margin-top: 10px;"><span class="tech-stack-tag">React Native</span><span class="tech-stack-tag">TS</span></div>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -948,6 +1043,7 @@
                                         <i class="fas fa-search"></i>
                                         <h6 class="title">My Vodafone Ireland - Android</h6>
                                         <span class="sub-title">React Native</span>
+                                    <div style="margin-top: 10px;"><span class="tech-stack-tag">React Native</span><span class="tech-stack-tag">TS</span></div>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -959,6 +1055,7 @@
                                         <i class="fas fa-search"></i>
                                         <h6 class="title">My Vodafone Albania - iOS</h6>
                                         <span class="sub-title">React Native</span>
+                                    <div style="margin-top: 10px;"><span class="tech-stack-tag">React Native</span><span class="tech-stack-tag">TS</span></div>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -970,6 +1067,7 @@
                                         <i class="fas fa-search"></i>
                                         <h6 class="title">My Vodafone Albania - Android</h6>
                                         <span class="sub-title">React Native</span>
+                                    <div style="margin-top: 10px;"><span class="tech-stack-tag">React Native</span><span class="tech-stack-tag">TS</span></div>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -981,6 +1079,7 @@
                                         <i class="fas fa-search"></i>
                                         <h6 class="title">My Vodafone Czech - iOS</h6>
                                         <span class="sub-title">React Native</span>
+                                    <div style="margin-top: 10px;"><span class="tech-stack-tag">React Native</span><span class="tech-stack-tag">TS</span></div>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -992,6 +1091,7 @@
                                         <i class="fas fa-search"></i>
                                         <h6 class="title">My Vodafone Czech - Android</h6>
                                         <span class="sub-title">React Native</span>
+                                    <div style="margin-top: 10px;"><span class="tech-stack-tag">React Native</span><span class="tech-stack-tag">TS</span></div>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -1003,6 +1103,7 @@
                                         <i class="fas fa-search"></i>
                                         <h6 class="title">My Vodafone Portugal - iOS</h6>
                                         <span class="sub-title">React Native</span>
+                                    <div style="margin-top: 10px;"><span class="tech-stack-tag">React Native</span><span class="tech-stack-tag">TS</span></div>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -1014,6 +1115,7 @@
                                         <i class="fas fa-search"></i>
                                         <h6 class="title">My Vodafone Portugal - Android</h6>
                                         <span class="sub-title">React Native</span>
+                                    <div style="margin-top: 10px;"><span class="tech-stack-tag">React Native</span><span class="tech-stack-tag">TS</span></div>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -1025,6 +1127,7 @@
                                         <i class="fas fa-search"></i>
                                         <h6 class="title">Twist Music - iOS</h6>
                                         <span class="sub-title">React Native</span>
+                                    <div style="margin-top: 10px;"><span class="tech-stack-tag">React Native</span><span class="tech-stack-tag">TS</span></div>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -1036,6 +1139,7 @@
                                         <i class="fas fa-search"></i>
                                         <h6 class="title">Twist Music - Android</h6>
                                         <span class="sub-title">React Native</span>
+                                    <div style="margin-top: 10px;"><span class="tech-stack-tag">React Native</span><span class="tech-stack-tag">TS</span></div>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -1047,6 +1151,7 @@
                                         <i class="fas fa-search"></i>
                                         <h6 class="title">Memphis Tours - iOS</h6>
                                         <span class="sub-title">React Native</span>
+                                    <div style="margin-top: 10px;"><span class="tech-stack-tag">React Native</span><span class="tech-stack-tag">TS</span></div>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -1058,6 +1163,7 @@
                                         <i class="fas fa-search"></i>
                                         <h6 class="title">Memphis Tours - Android</h6>
                                         <span class="sub-title">React Native</span>
+                                    <div style="margin-top: 10px;"><span class="tech-stack-tag">React Native</span><span class="tech-stack-tag">TS</span></div>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -1069,6 +1175,7 @@
                                         <i class="fas fa-search"></i>
                                         <h6 class="title">Memphis Sales - iOS</h6>
                                         <span class="sub-title">React Native</span>
+                                    <div style="margin-top: 10px;"><span class="tech-stack-tag">React Native</span><span class="tech-stack-tag">TS</span></div>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -1080,6 +1187,7 @@
                                         <i class="fas fa-search"></i>
                                         <h6 class="title">Memphis Sales - Android</h6>
                                         <span class="sub-title">React Native</span>
+                                    <div style="margin-top: 10px;"><span class="tech-stack-tag">React Native</span><span class="tech-stack-tag">TS</span></div>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -1091,6 +1199,7 @@
                                         <i class="fas fa-search"></i>
                                         <h6 class="title">React Native Paginated Modal Picker</h6>
                                         <span class="sub-title">Open Source Libraries</span>
+                                    <div style="margin-top: 10px;"><span class="tech-stack-tag">NPM</span><span class="tech-stack-tag">Library</span></div>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -1102,6 +1211,7 @@
                                         <i class="fas fa-search"></i>
                                         <h6 class="title">React Native Local Notifier</h6>
                                         <span class="sub-title">Open Source Libraries</span>
+                                    <div style="margin-top: 10px;"><span class="tech-stack-tag">NPM</span><span class="tech-stack-tag">Library</span></div>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -1113,6 +1223,7 @@
                                         <i class="fas fa-search"></i>
                                         <h6 class="title">E7la2ly</h6>
                                         <span class="sub-title">Native Android</span>
+                                    <div style="margin-top: 10px;"><span class="tech-stack-tag">Android</span><span class="tech-stack-tag">Kotlin</span></div>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -1124,6 +1235,7 @@
                                         <i class="fas fa-search"></i>
                                         <h6 class="title">Global News</h6>
                                         <span class="sub-title">Native Android</span>
+                                    <div style="margin-top: 10px;"><span class="tech-stack-tag">Android</span><span class="tech-stack-tag">Kotlin</span></div>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -1135,6 +1247,7 @@
                                         <i class="fas fa-search"></i>
                                         <h6 class="title">Books Info</h6>
                                         <span class="sub-title">Native Android</span>
+                                    <div style="margin-top: 10px;"><span class="tech-stack-tag">Android</span><span class="tech-stack-tag">Kotlin</span></div>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -1146,6 +1259,7 @@
                                         <i class="fas fa-search"></i>
                                         <h6 class="title">To DO List</h6>
                                         <span class="sub-title">Native Android</span>
+                                    <div style="margin-top: 10px;"><span class="tech-stack-tag">Android</span><span class="tech-stack-tag">Kotlin</span></div>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -1157,6 +1271,7 @@
                                         <i class="fas fa-search"></i>
                                         <h6 class="title">COVID-19 Tracker</h6>
                                         <span class="sub-title">Flutter</span>
+                                    <div style="margin-top: 10px;"><span class="tech-stack-tag">Flutter</span><span class="tech-stack-tag">Dart</span></div>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -1168,6 +1283,7 @@
                                         <i class="fas fa-search"></i>
                                         <h6 class="title">Buybes E-Commerce</h6>
                                         <span class="sub-title">Flutter</span>
+                                    <div style="margin-top: 10px;"><span class="tech-stack-tag">Flutter</span><span class="tech-stack-tag">Dart</span></div>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -1179,6 +1295,7 @@
                                         <i class="fas fa-search"></i>
                                         <h6 class="title">Meal Here</h6>
                                         <span class="sub-title">Flutter</span>
+                                    <div style="margin-top: 10px;"><span class="tech-stack-tag">Flutter</span><span class="tech-stack-tag">Dart</span></div>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -1190,6 +1307,7 @@
                                         <i class="fas fa-search"></i>
                                         <h6 class="title">The News</h6>
                                         <span class="sub-title">Flutter</span>
+                                    <div style="margin-top: 10px;"><span class="tech-stack-tag">Flutter</span><span class="tech-stack-tag">Dart</span></div>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -1201,6 +1319,7 @@
                                         <i class="fas fa-search"></i>
                                         <h6 class="title">Trivia Game</h6>
                                         <span class="sub-title">Flutter</span>
+                                    <div style="margin-top: 10px;"><span class="tech-stack-tag">Flutter</span><span class="tech-stack-tag">Dart</span></div>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -1268,6 +1387,7 @@
     </section>
 
     <!-- CONTACT SECTION -->
+</main>
     <footer class="mh-footer" id="mh-contact">
         <div class="container">
             <div class="row section-separator">
